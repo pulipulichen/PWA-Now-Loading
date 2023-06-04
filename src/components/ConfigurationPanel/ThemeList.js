@@ -59,4 +59,14 @@ export default [
     noteMessageColor: '#8c7e80',
     rolloutColor: 'grey',
   },
+  { 
+    title: '比賽中',
+    coverImage: './assets/cover/sisi-tournament.png',
+    coverStyle: 'square',
+    backgroundColor: '#f2cba7',
+    clockColor: '#767D1B',
+    scheduleMessageColor: '#852122',
+    noteMessageColor: '#a66c44',
+    rolloutColor: 'brown',
+  },
 ]
