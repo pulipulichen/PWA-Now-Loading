@@ -1,6 +1,4 @@
 import dayjs from 'dayjs'
-import $ from 'jquery'
-import TextFill from 'textfilljs';
 
 let app = {
   props: ['db'],
@@ -28,11 +26,13 @@ let app = {
       return this.HH + ':' + this.mm + ':' + this.ss
     },
     computedStyle () {
-      if (!this.HH) {
-        return {
-          'visibility': 'hidden',
-        }
+      let output = {
+        color: this.db.localConfig.clockColor,
       }
+      if (!this.HH) {
+        output['visibility'] = 'hidden'
+      }
+      return output
     }
   },
   mounted() {
@@ -49,7 +49,12 @@ let app = {
         this.mm = day.format('mm')
         this.ss = day.format('ss')
       }, 1000)
-    },
+    }, 
+    clearMessage () {
+      this.db.localConfig.nowMessage = 'NOW: '
+      this.db.localConfig.nextMessage = 'NEXT: '
+      this.db.localConfig.noteMessage = ''
+    }
     // initFont: async function () {
     //   while (document.getElementById('ClockWidget').length === 0) {
     //     await this.db.utils.AsyncUtils.sleep()

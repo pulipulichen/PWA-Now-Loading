@@ -1,3 +1,20 @@
-.ComponentTemplate {
-  
+.ConfigurationPanel {
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .cover-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    cursor: pointer;
+
+    &.selected {
+      opacity: 0.5;
+    }
+  }
 }
+

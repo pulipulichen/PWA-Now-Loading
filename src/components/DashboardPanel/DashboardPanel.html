@@ -1,4 +1,5 @@
-<div class="DashboardPanel">
+<div class="DashboardPanel"
+  @dblclick.prevent.stop="toggleFullScreen">
   <div class="panel ui grid">
       <div class="seven wide middle aligned column">
         <CoverImage 
@@ -7,18 +8,30 @@
         </CoverImage>
       </div>
       <div class="nine wide middle aligned message column">
+        <NowMessage 
+          ref="NowMessage"
+          :db="db">
+        </NowMessage>
         <ClockWidget 
           ref="ClockWidget"
           :db="db">
         </ClockWidget>
-        <ScheduleMessage 
-          ref="ScheduleMessage"
+        <NextMessage 
+          ref="NextMessage"
           :db="db">
-        </ScheduleMessage>
-        <PublicMessage 
-          ref="PublicMessage"
+        </NextMessage>
+        <NoteMessage 
+          ref="NoteMessage"
           :db="db">
-        </PublicMessage>
+        </NoteMessage>
       </div>
   </div>
+
+  
+  <RolloutWidget 
+    ref="RolloutWidget"
+    :db="db"
+    v-show="db.localConfig.rolloutNumber">
+  </RolloutWidget>
+
 </div>

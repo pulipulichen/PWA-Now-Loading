@@ -5,7 +5,7 @@ let config = {
 
   view: 'main',
   showConfiguration: false,
-  resetLocalConfigHour: 0.1
+  resetLocalConfigHour: 0.5
 }
 
 // ----------------------------------------------------------------

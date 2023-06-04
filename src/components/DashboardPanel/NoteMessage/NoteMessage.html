@@ -1,0 +1,8 @@
+<div class="NoteMessage"
+  :class="computedClassList">
+  <quill-editor v-model="db.localConfig.noteMessage"
+    ref="QuillEditor"
+    :options="editorOption"
+    :style="computedQuillEditorStyle">
+  </quill-editor>
+</div>

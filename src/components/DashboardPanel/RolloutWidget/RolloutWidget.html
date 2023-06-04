@@ -1,0 +1,7 @@
+<div class="RolloutPanel ui inverted segment"
+  :class="computedClassList"
+  @click="db.config.showConfiguration = !db.config.showConfiguration"
+  @dblclick="db.localConfig.rolloutNumber = null">
+  <div class="header">{{ $t('點名中') }}</div>
+  <div class="rollout-number">{{ db.localConfig.rolloutNumber }}</div>
+</div>
