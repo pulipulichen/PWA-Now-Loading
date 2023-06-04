@@ -1,0 +1,46 @@
+<form class="ConfigurationPanel ui form">
+
+  <div class="field">
+    <label for="localConfigCoverImage">
+      {{ $t('Cover Image') }}
+    </label>
+    <input 
+      type="url" 
+      id="localConfigCoverImage"
+      v-model="db.localConfig.coverImage" />
+  </div>
+
+  <div class="field">
+    <label for="localConfigCoverStyle">
+      {{ $t('Cover Style') }}
+    </label>
+    <select 
+      id="localConfigCoverStyle"
+      v-model="db.localConfig.coverStyle">
+      <option value="round">{{ $t('Round') }}</option>
+      <option value="round-corners-25">{{ $t('Round Corners 25%') }}</option>
+      <option value="square">{{ $t('Square') }}</option>
+    </select>    
+  </div>
+
+  <div class="field">
+    <label for="localConfigBackgroundColor">
+      {{ $t('Background Color') }}
+    </label>
+    <input 
+      type="text" 
+      id="localConfigBackgroundColor"
+      v-model="db.localConfig.backgroundColor" />
+  </div>
+
+  <div class="field">
+    <label for="localConfigFontColor">
+      {{ $t('Font Color') }}
+    </label>
+    <input 
+      type="text" 
+      id="localConfigFontColor"
+      v-model="db.localConfig.fontColor" />
+  </div>
+
+</form>

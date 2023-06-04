@@ -1,0 +1,24 @@
+<div class="DashboardPanel">
+  <div class="panel ui grid">
+      <div class="seven wide middle aligned column">
+        <CoverImage 
+          ref="CoverImage"
+          :db="db">
+        </CoverImage>
+      </div>
+      <div class="nine wide middle aligned message column">
+        <ClockWidget 
+          ref="ClockWidget"
+          :db="db">
+        </ClockWidget>
+        <ScheduleMessage 
+          ref="ScheduleMessage"
+          :db="db">
+        </ScheduleMessage>
+        <PublicMessage 
+          ref="PublicMessage"
+          :db="db">
+        </PublicMessage>
+      </div>
+  </div>
+</div>

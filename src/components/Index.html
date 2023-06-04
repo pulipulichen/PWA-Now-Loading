@@ -1,0 +1,23 @@
+<div class="Index"
+  v-show="db.config.inited"
+  :style="computedStyle">
+
+  <ConfigurationToggleButton 
+    ref="ConfigurationToggleButton"
+    :db="db">
+  </ConfigurationToggleButton>
+
+  <DashboardPanel 
+    ref="DashboardPanel"
+    :db="db"
+    v-show="!db.config.showConfiguration">
+  </DashboardPanel>
+
+  <ConfigurationPanel 
+    ref="ConfigurationPanel"
+    :db="db"
+    v-show="db.config.showConfiguration">
+  </ConfigurationPanel>
+
+
+</div>
