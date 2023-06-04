@@ -1,10 +1,10 @@
 {
-  "name": "Txt2HTML",
-  "short_name": "Txt2HTML",
+  "name": "Now Loading",
+  "short_name": "Now Loading",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#E1F7F7",
-  "description": "Convert plain text to HTML.",
+  "description": "A PWA to display \"Now Loading\" screen.",
   "icons": [{
     "src": "assets/favicon/favicon.png",
     "sizes": "512x512",
