@@ -1,7 +1,7 @@
 let localConfig = {
   nowMessage: ``,
   nextMessage: ``,
-  noteMessage: ``,
+  noteMessage: ``, 
   coverImage: `./assets/cover/pudding-cake.gif`,
   coverStyle: `round`,
   backgroundColor: `#FFFFFF`,
