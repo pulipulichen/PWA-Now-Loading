@@ -229,6 +229,11 @@ module.exports = (env, argv) => {
       }
       //webpackConfig.plugins.push(new BundleAnalyzerPlugin())
     }
+    else {
+      webpackConfig.watchOptions = {
+        ignored: /node_modules|dist|\/default\/assets\/fonts/
+      }
+    }
   }
   
   if (argv.mode === 'development') {

@@ -36,7 +36,7 @@ let app = {
     },
     setTheme (config) {
       for (let key in config) {
-        if (key === 'title') {
+        if (key === 'title' || config[key] === '') {
           continue
         }
         this.db.localConfig[key] = config[key]
