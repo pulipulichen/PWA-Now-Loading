@@ -123,7 +123,7 @@ export default [
   { 
     coverImage: './assets/cover/bocchi-the-rock/bocchi-bocchi-the-rock-kita.gif', 
     coverStyle: 'round-corners-25', 
-    backgroundColor: '#949194',
+    backgroundColor: '#4F4C49',
     clockColor: '#FBEFED',
     scheduleMessageColor: '#FBF9FC',
     noteMessageColor: '#949194',
@@ -133,7 +133,7 @@ export default [
   { 
     coverImage: './assets/cover/bocchi-the-rock/bocchi-bocchi-the-rock-sit.gif', 
     coverStyle: 'round-corners-25', 
-    backgroundColor: '#C0BDBD',
+    backgroundColor: '#4F4C49',
     clockColor: '#FAF7F7',
     scheduleMessageColor: '#FBF9B9',
     noteMessageColor: '#9C9A9C',
@@ -143,7 +143,7 @@ export default [
   { 
     coverImage: './assets/cover/bocchi-the-rock/bocchi-bocchi-the-rock.gif', 
     coverStyle: 'round-corners-25', 
-    backgroundColor: '#C0BDBD',
+    backgroundColor: '#4F4C49',
     clockColor: '#FAF7F7',
     scheduleMessageColor: '#FBF9B9',
     noteMessageColor: '#9C9A9C',
@@ -153,7 +153,7 @@ export default [
   { 
     coverImage: './assets/cover/bocchi-the-rock/kita-ikuyo-bocchi-the-rock.gif', 
     coverStyle: 'round-corners-25', 
-    backgroundColor: '#949194',
+    backgroundColor: '#4F4C49',
     clockColor: '#FBEFED',
     scheduleMessageColor: '#FBF9FC',
     noteMessageColor: '#949194',
