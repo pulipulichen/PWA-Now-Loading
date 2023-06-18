@@ -7,6 +7,7 @@ let app = {
     NextMessage: () => import(/* webpackChunkName: "components/NextMessage" */ './NextMessage/NextMessage.vue'),
     NoteMessage: () => import(/* webpackChunkName: "components/NoteMessage" */ './NoteMessage/NoteMessage.vue'),
     RolloutWidget: () => import(/* webpackChunkName: "components/RolloutWidget" */ './RolloutWidget/RolloutWidget.vue'),
+    CountdownTimer: () => import(/* webpackChunkName: "components/CountdownTimer" */ './CountdownTimer/CountdownTimer.vue'),
   },
   data () {    
     this.$i18n.locale = this.db.localConfig.locale
