@@ -45,7 +45,7 @@ let app = {
         if (isNextHour) {
           countdown = countdown + 60
         }
-        countdown = countdown + (60 - minute)
+        countdown = countdown + (60 - minute) + 1
 
         this.countdown = countdown
       }, 1000)
