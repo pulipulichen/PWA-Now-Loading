@@ -160,4 +160,14 @@ export default [
     rolloutColor: 'red',
     coverSize: 'cover'
    },
+   { 
+    coverImage: './assets/cover/android-dancing.gif', 
+    coverStyle: 'round', 
+    backgroundColor: '#E9E9E9',
+    clockColor: '#5B6F51',
+    scheduleMessageColor: '#060506',
+    noteMessageColor: '#A3B49B',
+    rolloutColor: '#060506',
+    coverSize: 'cover'
+   },
 ]
