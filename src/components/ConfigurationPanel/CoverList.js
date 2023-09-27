@@ -170,4 +170,14 @@ export default [
     rolloutColor: '#060506',
     coverSize: 'cover'
    },
+   { 
+    coverImage: './assets/cover/ui.gif', 
+    coverStyle: 'round', 
+    backgroundColor: '#C4C5E6',
+    clockColor: '#19196B',
+    scheduleMessageColor: '#3770F2',
+    noteMessageColor: '#3770F2',
+    rolloutColor: '#3770F2',
+    coverSize: 'cover'
+   },
 ]

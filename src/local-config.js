@@ -4,13 +4,13 @@ let localConfig = {
   noteMessage: ``, 
   coverImage: `./assets/cover/pudding-cake.gif`,
   coverStyle: `round`,
-  backgroundColor: `#FFFFFF`,
+  backgroundColor: `#feebed`,
   coverSize: 'contain',
-  clockColor: `#000000`,
-  scheduleMessageColor: `#000000`,
-  noteMessageColor: `#000000`,
+  clockColor: `#644329`,
+  scheduleMessageColor: `#785c47`,
+  noteMessageColor: `#b89168`,
   rolloutNumber: '',
-  rolloutColor: 'black',
+  rolloutColor: 'brown',
   lastChanged: null
 }
 
