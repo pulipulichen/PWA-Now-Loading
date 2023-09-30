@@ -173,11 +173,21 @@ export default [
    { 
     coverImage: './assets/cover/ui.gif', 
     coverStyle: 'round', 
-    backgroundColor: '#C4C5E6',
-    clockColor: '#19196B',
-    scheduleMessageColor: '#3770F2',
-    noteMessageColor: '#3770F2',
-    rolloutColor: '#3770F2',
+    backgroundColor: '#f3ffbd',
+    clockColor: '#00296b',
+    scheduleMessageColor: '#247ba0',
+    noteMessageColor: '#247ba0',
+    rolloutColor: '#247ba0',
+    coverSize: 'cover'
+   },
+   { 
+    coverImage: './assets/cover/anime/helck-piwi.gif', 
+    coverStyle: 'round', 
+    backgroundColor: '#faf0ca',
+    clockColor: '#718355',
+    scheduleMessageColor: '#87986a',
+    noteMessageColor: '#87986a',
+    rolloutColor: '#87986a',
     coverSize: 'cover'
    },
 ]
