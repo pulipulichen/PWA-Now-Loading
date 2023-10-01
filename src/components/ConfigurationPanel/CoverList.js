@@ -190,4 +190,14 @@ export default [
     rolloutColor: '#87986a',
     coverSize: 'cover'
    },
+   { 
+    coverImage: './assets/cover/anime/frieren-stupid.gif', 
+    coverStyle: 'round', 
+    backgroundColor: '#D8CEC0',
+    clockColor: '#748938',
+    scheduleMessageColor: '#636776',
+    noteMessageColor: '#636776',
+    rolloutColor: '#654945',
+    coverSize: 'cover'
+   },
 ]
