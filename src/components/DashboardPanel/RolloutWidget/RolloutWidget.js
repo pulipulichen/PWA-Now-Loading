@@ -6,6 +6,9 @@ let app = {
   data () {    
     this.$i18n.locale = this.db.localConfig.locale
     return {
+      resetTimer: null,
+      resetInteval: (1000 * 60 * 30),
+      // resetInteval: (1000 * 6)
     }
   },
   watch: {
@@ -13,9 +16,7 @@ let app = {
       this.$i18n.locale = this.db.localConfig.locale;
     },
     'db.localConfig.rolloutNumber' () {
-      setTimeout(() => {
-        this.db.localConfig.rolloutNumber = null
-      }, 1000 * 60 * 30)
+      this.scheduleToReset()
     }
   },
   computed: {
@@ -27,12 +28,21 @@ let app = {
       return classList
     }
   },
-  // mounted() {
-    
-  // },
-  // methods: {
-    
-  // }
+  mounted() {
+    this.scheduleToReset()
+  },
+  methods: {
+    scheduleToReset () {
+      if (this.db.localConfig.rolloutNumber === null) {
+        return false
+      }
+
+      clearTimeout(this.resetTimer)
+      this.resetTimer = setTimeout(() => {
+        this.db.localConfig.rolloutNumber = null
+      }, this.resetInteval)
+    }
+  }
 }
 
 export default app
