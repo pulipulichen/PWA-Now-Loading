@@ -200,4 +200,14 @@ export default [
     rolloutColor: '#654945',
     coverSize: 'cover'
    },
+   { 
+    coverImage: './assets/cover/season/padoru_santa.png', 
+    coverStyle: 'square', 
+    backgroundColor: '#C4E6C7',
+    clockColor: '#AE1717',
+    scheduleMessageColor: '#0A541A',
+    noteMessageColor: '#0A541A',
+    rolloutColor: '#6B0A0A',
+    coverSize: 'contain'
+   },
 ]

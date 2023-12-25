@@ -22,11 +22,23 @@ let app = {
   computed: {
     computedClassList () {
       let classList = [
-        this.db.localConfig.rolloutColor
       ]
 
+      if (this.db.localConfig.rolloutColor.startsWith('#') === false) {
+        classList.push(this.db.localConfig.rolloutColor)
+      }
+
       return classList
-    }
+    },
+    computedStyleList () {
+      let styleList = {}
+
+      if (this.db.localConfig.rolloutColor.startsWith('#')) {
+        styleList['background-color'] = this.db.localConfig.rolloutColor
+      }
+
+      return styleList
+    },
   },
   mounted() {
     this.scheduleToReset()
