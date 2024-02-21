@@ -48,7 +48,6 @@ let app = {
       if (this.db.localConfig.rolloutNumber === null) {
         return false
       }
-
       clearTimeout(this.resetTimer)
       this.resetTimer = setTimeout(() => {
         this.db.localConfig.rolloutNumber = null
