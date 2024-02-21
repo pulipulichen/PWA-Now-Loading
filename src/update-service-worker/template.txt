@@ -16,7 +16,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v1708540984906';
+const PRECACHE = '{{timestamp}}';
 const RUNTIME = 'runtime';
 
 /**
@@ -27,54 +27,7 @@ const RUNTIME = 'runtime';
  */
 
 // A list of local resources we always want to be cached.
-const PRECACHE_URLS = [
-  "dist/asset/brand-icons.eot",
-  "dist/asset/brand-icons.svg",
-  "dist/asset/brand-icons.ttf",
-  "dist/asset/brand-icons.woff",
-  "dist/asset/brand-icons.woff2",
-  "dist/asset/digital-7.mono.ttf",
-  "dist/asset/digital-7.regular.ttf",
-  "dist/asset/favicon.png",
-  "dist/asset/flags.png",
-  "dist/asset/icons.eot",
-  "dist/asset/icons.svg",
-  "dist/asset/icons.ttf",
-  "dist/asset/icons.woff",
-  "dist/asset/icons.woff2",
-  "dist/asset/list-complated.png",
-  "dist/asset/list-todo.png",
-  "dist/asset/main.gif",
-  "dist/asset/outline-icons.eot",
-  "dist/asset/outline-icons.svg",
-  "dist/asset/outline-icons.ttf",
-  "dist/asset/outline-icons.woff",
-  "dist/asset/outline-icons.woff2",
-  "dist/asset/tsuyokaze.gif",
-  "dist/components/ClockWidget.js",
-  "dist/components/ConfigurationPanel.js",
-  "dist/components/ConfigurationToggleButton.js",
-  "dist/components/Converter.js",
-  "dist/components/CountdownTimer.js",
-  "dist/components/CoverImage.js",
-  "dist/components/DashboardPanel.js",
-  "dist/components/NavigationBar.js",
-  "dist/components/NextMessage.js",
-  "dist/components/NoteMessage.js",
-  "dist/components/NowMessage.js",
-  "dist/components/PublicMessage.js",
-  "dist/components/RolloutPanel.js",
-  "dist/components/RolloutWidget.js",
-  "dist/components/ScheduleMessage.js",
-  "dist/index.js",
-  "dist/vendors/semantic-ui-niwsf.js",
-  "dist/vendors~components/Converter.js",
-  "dist/vendors~components/NoteMessage.js",
-  "dist/vendors~components/PublicMessage.js",
-  "index.html",
-  "manifest.json",
-  "service-worker.js"
-];
+const PRECACHE_URLS = {{urls}};
 
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {

@@ -210,4 +210,14 @@ export default [
     rolloutColor: '#6B0A0A',
     coverSize: 'contain'
    },
+   { 
+    coverImage: './assets/cover/anime/walking-mushroom-dunmeshi.gif', 
+    coverStyle: 'round', 
+    backgroundColor: '#F8F4F9',
+    clockColor: '#D2523B',
+    scheduleMessageColor: '#7B5FAC',
+    noteMessageColor: '#7B5FAC',
+    rolloutColor: '#D2523B',
+    coverSize: 'contain'
+   },
 ]
