@@ -16,7 +16,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v20240221-202242';
+const PRECACHE = 'precache-v20240226-014438';
 const RUNTIME = 'runtime';
 
 /**
@@ -56,24 +56,37 @@ const PRECACHE_URLS = [
   "dist/asset/outline-icons.woff2",
   "dist/asset/tsuyokaze.gif",
   "dist/components/ClockWidget.js",
+  "dist/components/ClockWidget.js.map",
   "dist/components/ConfigurationPanel.js",
+  "dist/components/ConfigurationPanel.js.map",
   "dist/components/ConfigurationToggleButton.js",
+  "dist/components/ConfigurationToggleButton.js.map",
   "dist/components/Converter.js",
   "dist/components/CountdownTimer.js",
+  "dist/components/CountdownTimer.js.map",
   "dist/components/CoverImage.js",
+  "dist/components/CoverImage.js.map",
   "dist/components/DashboardPanel.js",
+  "dist/components/DashboardPanel.js.map",
   "dist/components/NavigationBar.js",
   "dist/components/NextMessage.js",
+  "dist/components/NextMessage.js.map",
   "dist/components/NoteMessage.js",
+  "dist/components/NoteMessage.js.map",
   "dist/components/NowMessage.js",
+  "dist/components/NowMessage.js.map",
   "dist/components/PublicMessage.js",
   "dist/components/RolloutPanel.js",
   "dist/components/RolloutWidget.js",
+  "dist/components/RolloutWidget.js.map",
   "dist/components/ScheduleMessage.js",
   "dist/index.js",
+  "dist/index.js.map",
   "dist/vendors/semantic-ui-niwsf.js",
+  "dist/vendors/semantic-ui-niwsf.js.map",
   "dist/vendors~components/Converter.js",
   "dist/vendors~components/NoteMessage.js",
+  "dist/vendors~components/NoteMessage.js.map",
   "dist/vendors~components/PublicMessage.js",
   "index.html",
   "manifest.json",
