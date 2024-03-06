@@ -23,3 +23,6 @@ Grey
 Black
 
 https://coolors.co/?home
+
+https://paletton.com/#uid=10H0u0kw0uKk0C2ppxoyLodEgiY
+https://coolors.co/palettes/popular/yellow

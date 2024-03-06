@@ -134,7 +134,7 @@ export default [
     coverImage: './assets/cover/bocchi-the-rock/bocchi-bocchi-the-rock-sit.gif', 
     coverStyle: 'round-corners-25', 
     backgroundColor: '#FFF6FB',
-    clockColor: '#f58b00',
+    clockColor: '#975500',
     scheduleMessageColor: '#770404',
     noteMessageColor: '#020213',
     rolloutColor: '#590d22',
