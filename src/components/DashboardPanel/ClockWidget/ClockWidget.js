@@ -28,6 +28,8 @@ let app = {
     computedStyle () {
       let output = {
         color: this.db.localConfig.clockColor,
+        '-webkit-text-stroke': '0.1rem ' + this.db.localConfig.backgroundColor,
+        'text-stroke': '0.1rem ' + this.db.localConfig.backgroundColor,
       }
       if (!this.HH) {
         output['visibility'] = 'hidden'

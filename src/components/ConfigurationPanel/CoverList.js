@@ -1,5 +1,15 @@
 export default [
   { 
+    coverImage: './assets/cover/pudding-cake.gif',  
+    coverStyle: 'round', 
+    backgroundColor: '#feebed',
+    clockColor: '#644329',
+    scheduleMessageColor: '#785c47',
+    noteMessageColor: '#7B5226',
+    rolloutColor: 'brown',
+    coverSize: 'cover'
+  },
+  { 
     coverImage: './assets/cover/ai-jamming.gif',
     coverStyle: 'round',
     backgroundColor: '#f8eee3',
@@ -15,18 +25,8 @@ export default [
     backgroundColor: '#F9F6F2',
     clockColor: '#941317',
     scheduleMessageColor: '#4F3F27',
-    noteMessageColor: '#FCC63E',
+    noteMessageColor: '#B48305',
     rolloutColor: 'red',
-    coverSize: 'cover'
-  },
-  { 
-    coverImage: './assets/cover/pudding-cake.gif',  
-    coverStyle: 'round', 
-    backgroundColor: '#feebed',
-    clockColor: '#644329',
-    scheduleMessageColor: '#785c47',
-    noteMessageColor: '#b89168',
-    rolloutColor: 'brown',
     coverSize: 'cover'
   },
   { 
@@ -34,7 +34,7 @@ export default [
     coverStyle: 'square', 
     backgroundColor: '#f2eeed',
     clockColor: '#877179',
-    scheduleMessageColor: '#a39eac',
+    scheduleMessageColor: '#675C7D',
     noteMessageColor: '#535253',
     rolloutColor: 'grey',
     coverSize: 'contain'
@@ -92,21 +92,21 @@ export default [
   { 
     coverImage: './assets/cover/sisi-pair-talk.png', 
     coverStyle: 'square', 
-    backgroundColor: '#C4E6C7',
-    clockColor: '#404344',
-    scheduleMessageColor: '#a39eac',
-    noteMessageColor: '#8c7e80',
-    rolloutColor: 'grey',
+    backgroundColor: '#fffdf7',
+    clockColor: '#2B628F',
+    scheduleMessageColor: '#6798c0',
+    noteMessageColor: '#2B628F',
+    rolloutColor: '#A88000',
     coverSize: 'contain'
    },
   { 
     coverImage: './assets/cover/sisi-pair-work.png', 
     coverStyle: 'square', 
-    backgroundColor: '#C4E6C7',
-    clockColor: '#404344',
-    scheduleMessageColor: '#a39eac',
-    noteMessageColor: '#8c7e80',
-    rolloutColor: 'grey',
+    backgroundColor: '#fffdf7',
+    clockColor: '#2B628F',
+    scheduleMessageColor: '#6798c0',
+    noteMessageColor: '#2B628F',
+    rolloutColor: '#A88000',
     coverSize: 'contain'
    },
    { 
@@ -114,7 +114,7 @@ export default [
      coverImage: './assets/cover/sisi-tournament.png',
      coverStyle: 'square',
      backgroundColor: '#f2cba7',
-     clockColor: '#767D1B',
+     clockColor: '#390099',
      scheduleMessageColor: '#852122',
      noteMessageColor: '#a66c44',
      rolloutColor: 'brown',
@@ -123,41 +123,41 @@ export default [
   { 
     coverImage: './assets/cover/bocchi-the-rock/bocchi-bocchi-the-rock-kita.gif', 
     coverStyle: 'round-corners-25', 
-    backgroundColor: '#4F4C49',
-    clockColor: '#FBEFED',
-    scheduleMessageColor: '#FBF9FC',
-    noteMessageColor: '#949194',
-    rolloutColor: 'red',
+    backgroundColor: '#bde0fe',
+    clockColor: '#390099',
+    scheduleMessageColor: '#9e0059',
+    noteMessageColor: '#9e0059',
+    rolloutColor: '#590d22',
     coverSize: 'cover'
    },
   { 
     coverImage: './assets/cover/bocchi-the-rock/bocchi-bocchi-the-rock-sit.gif', 
     coverStyle: 'round-corners-25', 
-    backgroundColor: '#4F4C49',
-    clockColor: '#FAF7F7',
-    scheduleMessageColor: '#FBF9B9',
-    noteMessageColor: '#9C9A9C',
-    rolloutColor: 'gray',
+    backgroundColor: '#FFF6FB',
+    clockColor: '#f58b00',
+    scheduleMessageColor: '#770404',
+    noteMessageColor: '#020213',
+    rolloutColor: '#590d22',
     coverSize: 'cover'
    },
   { 
     coverImage: './assets/cover/bocchi-the-rock/bocchi-bocchi-the-rock.gif', 
     coverStyle: 'round-corners-25', 
-    backgroundColor: '#4F4C49',
-    clockColor: '#FAF7F7',
-    scheduleMessageColor: '#FBF9B9',
-    noteMessageColor: '#9C9A9C',
-    rolloutColor: 'gray',
+    backgroundColor: '#bde0fe',
+    clockColor: '#390099',
+    scheduleMessageColor: '#9e0059',
+    noteMessageColor: '#9e0059',
+    rolloutColor: '#590d22',
     coverSize: 'cover'
    },
   { 
     coverImage: './assets/cover/bocchi-the-rock/kita-ikuyo-bocchi-the-rock.gif', 
     coverStyle: 'round-corners-25', 
-    backgroundColor: '#4F4C49',
-    clockColor: '#FBEFED',
-    scheduleMessageColor: '#FBF9FC',
-    noteMessageColor: '#949194',
-    rolloutColor: 'red',
+    backgroundColor: '#bde0fe',
+    clockColor: '#390099',
+    scheduleMessageColor: '#9e0059',
+    noteMessageColor: '#9e0059',
+    rolloutColor: '#590d22',
     coverSize: 'cover'
    },
    { 
@@ -166,40 +166,40 @@ export default [
     backgroundColor: '#E9E9E9',
     clockColor: '#5B6F51',
     scheduleMessageColor: '#060506',
-    noteMessageColor: '#A3B49B',
+    noteMessageColor: '#607B53',
     rolloutColor: '#060506',
     coverSize: 'cover'
    },
    { 
     coverImage: './assets/cover/ui.gif', 
     coverStyle: 'round', 
-    backgroundColor: '#f3ffbd',
-    clockColor: '#00296b',
+    backgroundColor: '#FFF563',
+    clockColor: '#8f03ff',
     scheduleMessageColor: '#247ba0',
     noteMessageColor: '#247ba0',
     rolloutColor: '#247ba0',
     coverSize: 'cover'
    },
-   { 
-    coverImage: './assets/cover/anime/helck-piwi.gif', 
-    coverStyle: 'round', 
-    backgroundColor: '#faf0ca',
-    clockColor: '#718355',
-    scheduleMessageColor: '#87986a',
-    noteMessageColor: '#87986a',
-    rolloutColor: '#87986a',
-    coverSize: 'cover'
-   },
-   { 
-    coverImage: './assets/cover/anime/frieren-stupid.gif', 
-    coverStyle: 'round', 
-    backgroundColor: '#D8CEC0',
-    clockColor: '#748938',
-    scheduleMessageColor: '#636776',
-    noteMessageColor: '#636776',
-    rolloutColor: '#654945',
-    coverSize: 'cover'
-   },
+  //  { 
+  //   coverImage: './assets/cover/anime/helck-piwi.gif', 
+  //   coverStyle: 'round', 
+  //   backgroundColor: '#faf0ca',
+  //   clockColor: '#718355',
+  //   scheduleMessageColor: '#87986a',
+  //   noteMessageColor: '#87986a',
+  //   rolloutColor: '#87986a',
+  //   coverSize: 'cover'
+  //  },
+  //  { 
+  //   coverImage: './assets/cover/anime/frieren-stupid.gif', 
+  //   coverStyle: 'round', 
+  //   backgroundColor: '#D8CEC0',
+  //   clockColor: '#748938',
+  //   scheduleMessageColor: '#636776',
+  //   noteMessageColor: '#636776',
+  //   rolloutColor: '#654945',
+  //   coverSize: 'cover'
+  //  },
    { 
     coverImage: './assets/cover/season/padoru_santa.png', 
     coverStyle: 'square', 
@@ -215,8 +215,8 @@ export default [
     coverStyle: 'round', 
     backgroundColor: '#F8F4F9',
     clockColor: '#D2523B',
-    scheduleMessageColor: '#7B5FAC',
-    noteMessageColor: '#7B5FAC',
+    scheduleMessageColor: '#46277D',
+    noteMessageColor: '#46277D',
     rolloutColor: '#D2523B',
     coverSize: 'contain'
    },

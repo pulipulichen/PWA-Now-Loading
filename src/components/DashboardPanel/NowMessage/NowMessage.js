@@ -16,7 +16,9 @@ let app = {
   computed: {
     computedStyle () {
       return {
-        color: this.db.localConfig.scheduleMessageColor
+        color: this.db.localConfig.scheduleMessageColor,
+        '-webkit-text-stroke': '0.05rem ' + this.db.localConfig.backgroundColor,
+        'text-stroke': '0.05rem ' + this.db.localConfig.backgroundColor,
       }
     }
   },
