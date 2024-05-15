@@ -110,6 +110,16 @@ export default [
     coverSize: 'contain'
    },
    { 
+     coverImage: './assets/cover/sisi/mothers_day.png', 
+     coverStyle: 'square', 
+     backgroundColor: '#fffdf7',
+     clockColor: '#2B628F',
+     scheduleMessageColor: '#6798c0',
+     noteMessageColor: '#2B628F',
+     rolloutColor: '#A88000',
+     coverSize: 'contain'
+    },
+   { 
      title: '比賽中',
      coverImage: './assets/cover/sisi-tournament.png',
      coverStyle: 'square',
