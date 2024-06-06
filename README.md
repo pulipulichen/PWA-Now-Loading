@@ -20,7 +20,7 @@ https://pulipulichen.github.io/PWA-Now-Loading/
 
 # Citation
 
-@TODO
+Chen, Y.-T. (2024). *PWA-Now-Loading* (20240607.023235) [Computer software]. Zenodo. [https://doi.org/10.5281/ZENODO.11508527](https://doi.org/10.5281/ZENODO.11508527)
 
 ----
 
