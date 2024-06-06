@@ -1,7 +1,7 @@
 {
   "name": "PWA-Now-Loading",
   "version": "1.0.0",
-  "description": "A PWA to display \"Now Loading\" screen.",
+  "description": "A PWA application that displays a clock and custom text during a waiting period. Users can set the text content displayed during the waiting period according to their needs. This application is developed as a Progressive Web App (PWA) and can be accessed and used directly through a browser.",
   "main": "index.js",
   "scripts": {
     "start": "bash ./docker-compose/d3.webpack-watch-build-production.sh",
@@ -15,7 +15,8 @@
     "d2.webpack-watch-development": "bash ./docker-compose/d2.webpack-watch-development.sh",
     "d3.webpack-watch-build-production": "bash ./docker-compose/d3.webpack-watch-build-production.sh",
     "d4.webpack-build-production": "bash ./docker-compose/d4.webpack-build-production.sh",
-    "update-service-worker.js": "node ./src/update-service-worker/main.js"
+    "update-service-worker.js": "node ./src/update-service-worker/main.js",
+    "tag": "./build/tag.sh"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,12 @@
   "keywords": [
     "Machine Learning"
   ],
-  "author": "Pulipuli Chen",
+  "author": {
+    "name": "Yung-Ting Chen",
+    "email": "blog@pulipuli.info",
+    "orcid": "https://orcid.org/0000-0003-3751-610X",
+    "url": "https://blog.pulipuli.info"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pulipulichen/PWA-Now-Loading/issues"

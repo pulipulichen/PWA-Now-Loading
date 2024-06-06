@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+authors:
+  - family-names: Chen
+    given-names: Yung-Ting
+    orcid: https://orcid.org/0000-0003-3751-610X
+    email: https://blog.pulipuli.info
+title: "PWA-Now-Loading"
+license: "MIT"
+repository-code: "https://github.com/pulipulichen/PWA-Now-Loading"
+abstract: "A PWA application that displays a clock and custom text during a waiting period. Users can set the text content displayed during the waiting period according to their needs. This application is developed as a Progressive Web App (PWA) and can be accessed and used directly through a browser."

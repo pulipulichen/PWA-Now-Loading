@@ -230,4 +230,14 @@ export default [
     rolloutColor: '#D2523B',
     coverSize: 'contain'
    },
+   { 
+    coverImage: './assets/cover/nine-sols/nine-sols-yiti.png',  
+    coverStyle: 'round', 
+    backgroundColor: '#F6F7E9',
+    clockColor: '#41423D',
+    scheduleMessageColor: '#41423D',
+    noteMessageColor: '#827A7F',
+    rolloutColor: '#9A7236',
+    coverSize: 'cover'
+  },
 ]
