@@ -1,4 +1,4 @@
-@TODO doi
+[![DOI](https://zenodo.org/badge/646650899.svg)](https://zenodo.org/doi/10.5281/zenodo.11508527)
 
 # PWA-Now-Loading: 等待過程中可顯示時鐘和自訂文字的畫面
 
@@ -29,3 +29,5 @@ https://pulipulichen.github.io/PWA-Now-Loading/
 - tsuyokaze.gif https://twitter.com/ArikaCoco/status/1650801835345866752
 - pudding-cake.gif https://tenor.com/view/pusheen-pudim-gif-26701494 pusheen.com
 - nine-sols-yiti.png https://twitter.com/Yanfiregreen/status/1798594586824368597
+- ai-jamming.gif https://www.reddit.com/r/OshiNoKo/comments/12l225p/ai_jamming_transparent_version_in_the_comments/
+- walking-mushroom-dunmeshi.gif https://tenor.com/view/walking-mushroom-dunmeshi-dungeon-meshi-delicious-in-dungeon-gif-3466738881157473385

@@ -9,3 +9,6 @@ title: "PWA-Now-Loading"
 license: "MIT"
 repository-code: "https://github.com/pulipulichen/PWA-Now-Loading"
 abstract: "A PWA application that displays a clock and custom text during a waiting period. Users can set the text content displayed during the waiting period according to their needs. This application is developed as a Progressive Web App (PWA) and can be accessed and used directly through a browser."
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.11508527
