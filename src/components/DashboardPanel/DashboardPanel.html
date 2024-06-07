@@ -1,6 +1,7 @@
 <div class="DashboardPanel"
   @dblclick.prevent.stop="toggleFullScreen">
-  <div class="panel ui grid">
+  <div class="panel ui grid"
+    v-if="coverType === 'image'">
       <div class="seven wide middle aligned column">
         <CoverImage 
           ref="CoverImage"
@@ -8,24 +9,31 @@
         </CoverImage>
       </div>
       <div class="nine wide middle aligned message column">
-        <NowMessage 
-          ref="NowMessage"
+        <MessagePanel 
+          ref="MessagePanel"
           :db="db">
-        </NowMessage>
-        <ClockWidget 
-          ref="ClockWidget"
-          :db="db">
-        </ClockWidget>
-        <NextMessage 
-          ref="NextMessage"
-          :db="db">
-        </NextMessage>
-        <NoteMessage 
-          ref="NoteMessage"
-          :db="db">
-        </NoteMessage>
+        </MessagePanel>
       </div>
   </div>
+
+  <div class="panel ui grid"
+    v-if="coverType === 'iframe'">
+    <div class="six wide middle aligned column">
+      <MessagePanel 
+        ref="MessagePanel"
+        :db="db"
+        size="small">
+      </MessagePanel>
+    </div>
+    <div class="ten wide middle aligned message column">
+      <IframeWidget 
+        ref="IframeWidget"
+        :db="db">
+      </IframeWidget>
+    </div>
+</div>
+
+
 
   <CountdownTimer 
     ref="CountdownTimer"

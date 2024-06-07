@@ -13,106 +13,147 @@
     </div>
   </div>
 
-  <div class="fields">
-    <div class="eight wide field">
-      <label for="localConfigRolloutNumber">
-        {{ $t('Rollout Number') }}
-      </label>
-      <input 
-        type="number" 
-        id="localConfigRolloutNumber"
-        v-model="db.localConfig.rolloutNumber" />
-    </div>
+  <div class="ui container">
+      
+    <div class="fields">
+      <div class="eight wide field">
+        <label for="localConfigRolloutNumber">
+          {{ $t('Rollout Number') }}
+        </label>
+        <input 
+          type="number" 
+          id="localConfigRolloutNumber"
+          v-model="db.localConfig.rolloutNumber" />
+      </div>
 
-    <div class="eight wide field">
-      <label for="localConfigRolloutColor">
-        {{ $t('Rollout Color') }}
-      </label>
-      <input 
-        type="text" 
-        id="localConfigRolloutColor"
-        v-model="db.localConfig.rolloutColor" />
-    </div>
-  </div>
-    
-  <div class="fields">
-    <div class="eight wide field">
-      <label for="localConfigCoverImage">
-        {{ $t('Cover Image') }}
-      </label>
-      <input 
-        type="url" 
-        id="localConfigCoverImage"
-        v-model="db.localConfig.coverImage" />
-      <div class="cover-theme-container">
-        <div v-for="config in CoverList"
-          class="cover-icon"
-          :class="{selected: (config.coverImage === db.localConfig.coverImage)}"
-          :title="getFilename(config.coverImage)"
-          :style="{'background': 'url(' + config.coverImage + ')'}"
-          @click="setTheme(config)">
+      <div class="eight wide field">
+        <label for="localConfigIframeURL">
+          {{ $t('Iframe URL') }}
+        </label>
+        <div class="ui action input">
+          <input 
+            type="url" 
+            id="localConfigIframeURL"
+            v-model="db.localConfig.iframeURL"
+            onfocus="this.select()" />
+          <div class="ui buttons">
+            <button class="ui icon button"
+              @click="db.localConfig.iframeURL = ''">
+              <i class="close icon"></i>
+            </button>
+            <button class="ui icon button"
+              @click="popup(db.localConfig.iframeURL)">
+              <i class="linkify icon"></i>
+            </button>
+          </div>
+            
         </div>
+          
       </div>
     </div>
-  
-    <div class="eight wide field">
-      <label for="localConfigCoverStyle">
-        {{ $t('Cover Style') }}
-      </label>
-      <select 
-        id="localConfigCoverStyle"
-        v-model="db.localConfig.coverStyle">
-        <option value="round">{{ $t('Round') }}</option>
-        <option value="round-corners-25">{{ $t('Round Corners 25%') }}</option>
-        <option value="square">{{ $t('Square') }}</option>
-      </select>    
-    </div>
-  </div>
-
-  <div class="fields">
-    <div class="eight wide field">
-      <label for="localConfigBackgroundColor">
-        {{ $t('Background Color') }}
-      </label>
-      <input 
-        type="text" 
-        id="localConfigBackgroundColor"
-        v-model="db.localConfig.backgroundColor" />
-    </div>
-
-    <div class="eight wide field">
-      <label for="localConfigClockColor">
-        {{ $t('Clock Color') }}
-      </label>
-      <input 
-        type="text" 
-        id="localConfigClockColor"
-        v-model="db.localConfig.clockColor" />
-    </div>
-  </div>
-  <div class="fields">
-    <div class="eight wide field">
-      <label for="localConfigScheduleMessageColor">
-        {{ $t('Schedule Message Color') }}
-      </label>
-      <input 
-        type="text" 
-        id="localConfigScheduleMessageColor"
-        v-model="db.localConfig.scheduleMessageColor" />
-    </div>
-
-    <div class="eight wide field">
-      <label for="localConfigNoteMessageColor">
-        {{ $t('Public Message Color') }}
-      </label>
-      <input 
-        type="text" 
-        id="localConfigNoteMessageColor"
-        v-model="db.localConfig.noteMessageColor" />
-    </div>
-  </div>
-
+      
+    <div class="fields">
+      <div class="eight wide field">
+        <label for="localConfigCoverImage">
+          {{ $t('Cover Image') }}
+        </label>
+        <input 
+          type="url" 
+          id="localConfigCoverImage"
+          v-model="db.localConfig.coverImage" />
+        <div class="cover-theme-container">
+          <div v-for="config in CoverList"
+            class="cover-icon"
+            :class="{selected: (config.coverImage === db.localConfig.coverImage)}"
+            :title="getFilename(config.coverImage)"
+            :style="{'background': 'url(' + config.coverImage + ')'}"
+            @click="setTheme(config)">
+          </div>
+        </div>
+      </div>
     
+      <div class="eight wide field">
+        <label for="localConfigCoverStyle">
+          {{ $t('Cover Style') }}
+        </label>
+        <select 
+          id="localConfigCoverStyle"
+          v-model="db.localConfig.coverStyle">
+          <option value="round">{{ $t('Round') }}</option>
+          <option value="round-corners-25">{{ $t('Round Corners 25%') }}</option>
+          <option value="square">{{ $t('Square') }}</option>
+        </select>    
+      </div>
+    </div>
+
+    <div class="fields">
+      <div class="eight wide field">
+        <label for="localConfigBackgroundColor">
+          {{ $t('Background Color') }}
+        </label>
+        <input 
+          type="text" 
+          id="localConfigBackgroundColor"
+          v-model="db.localConfig.backgroundColor" />
+      </div>
+
+      <div class="eight wide field">
+        <label for="localConfigClockColor">
+          {{ $t('Clock Color') }}
+        </label>
+        <input 
+          type="text" 
+          id="localConfigClockColor"
+          v-model="db.localConfig.clockColor" />
+      </div>
+    </div>
+    <div class="fields">
+      <div class="eight wide field">
+        <label for="localConfigScheduleMessageColor">
+          {{ $t('Schedule Message Color') }}
+        </label>
+        <input 
+          type="text" 
+          id="localConfigScheduleMessageColor"
+          v-model="db.localConfig.scheduleMessageColor" />
+      </div>
+
+      <div class="eight wide field">
+        <label for="localConfigNoteMessageColor">
+          {{ $t('Public Message Color') }}
+        </label>
+        <input 
+          type="text" 
+          id="localConfigNoteMessageColor"
+          v-model="db.localConfig.noteMessageColor" />
+      </div>
+    </div>
+
+    <div class="fields">
+
+      <div class="eight wide field">
+        <label for="localConfigRolloutColor">
+          {{ $t('Rollout Color') }}
+        </label>
+        <input 
+          type="text" 
+          id="localConfigRolloutColor"
+          v-model="db.localConfig.rolloutColor" />
+      </div>
+
+      <div class="eight wide field">
+        <label for="localConfigDemo">
+          {{ $t('Setup Demo') }}
+        </label>
+        <button type="button"
+          class="ui fluid button"
+          @click="setupDemo">
+          {{ $t('Setup Demo') }}
+        </button>
+      </div>
+    </div>
+
+  </div>
 
 
 </form>

@@ -11,7 +11,8 @@ let localConfig = {
   noteMessageColor: `#b89168`,
   rolloutNumber: '',
   rolloutColor: 'brown',
-  lastChanged: null
+  lastChanged: null,
+  iframeURL: ``,
 }
 
 // ----------------------------------------------------------------

@@ -42,6 +42,17 @@ let app = {
         this.db.localConfig[key] = config[key]
       }
       this.db.config.showConfiguration = false
+    },
+    popup (url) {
+      this.db.utils.PopupUtils.open(url)
+    },
+    setupDemo () {
+      this.db.localConfig.nowMessage = 'Now Message'
+      this.db.localConfig.nextMessage = 'Next Message'
+      this.db.localConfig.noteMessage = 'Note Message'
+      this.db.localConfig.iframeURL = 'https://gdoc.pub/doc/e/2PACX-1vSxSMgfAPH9e8UgVOjvjHjy_cr7gWyKDDNH-EtBBdH88pmuFCYSsULWIo71qIXSXcn5DOcHZVf1AmSp'
+
+      this.db.config.showConfiguration = false
     }
   }
 }

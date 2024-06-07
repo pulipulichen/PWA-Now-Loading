@@ -3,6 +3,7 @@
   id="ClockWidget"
   for="NextMessageInput"
   :style="computedStyle"
+  :class="computedClassName"
   @dblclick.prevent.stop="clearMessage">
   <div class="digits">{{ HH }}</div><div class="colon">:</div><div class="digits">{{ mm }}</div><div class="colon">:</div><div class="digits">{{ ss }}</div>
 </label>

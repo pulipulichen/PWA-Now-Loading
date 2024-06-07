@@ -2,12 +2,10 @@ let app = {
   props: ['db'],
   components: {
     CoverImage: () => import(/* webpackChunkName: "components/CoverImage" */ './CoverImage/CoverImage.vue'),
-    ClockWidget: () => import(/* webpackChunkName: "components/ClockWidget" */ './ClockWidget/ClockWidget.vue'),
-    NowMessage: () => import(/* webpackChunkName: "components/NowMessage" */ './NowMessage/NowMessage.vue'),
-    NextMessage: () => import(/* webpackChunkName: "components/NextMessage" */ './NextMessage/NextMessage.vue'),
-    NoteMessage: () => import(/* webpackChunkName: "components/NoteMessage" */ './NoteMessage/NoteMessage.vue'),
     RolloutWidget: () => import(/* webpackChunkName: "components/RolloutWidget" */ './RolloutWidget/RolloutWidget.vue'),
     CountdownTimer: () => import(/* webpackChunkName: "components/CountdownTimer" */ './CountdownTimer/CountdownTimer.vue'),
+    IframeWidget: () => import(/* webpackChunkName: "components/IframeWidget" */ './IframeWidget/IframeWidget.vue'),
+    MessagePanel: () => import(/* webpackChunkName: "components/MessagePanel" */ './MessagePanel/MessagePanel.vue'),
   },
   data () {    
     this.$i18n.locale = this.db.localConfig.locale
@@ -20,7 +18,23 @@ let app = {
     },
   },
   computed: {
-    
+    coverType () {
+      let isURL = false
+      try {
+        if (this.db.localConfig.iframeURL !== '') {
+          new URL(this.db.localConfig.iframeURL)
+          isURL = true
+        }
+      }
+      catch (e) {}
+
+      if (isURL) {
+        return 'iframe'
+      }
+      else {
+        return 'image'
+      }
+    }
   },
   mounted() {
     

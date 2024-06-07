@@ -240,4 +240,14 @@ export default [
     rolloutColor: '#9A7236',
     coverSize: 'cover'
   },
+  { 
+    coverImage: './assets/cover/sisi/box-toy.jpg',  
+    coverStyle: 'round', 
+    backgroundColor: '#EFE7DC',
+    clockColor: '#31443A',
+    scheduleMessageColor: '#166558',
+    noteMessageColor: '#A7798F',
+    rolloutColor: '#7E161D',
+    coverSize: 'cover'
+  },
 ]

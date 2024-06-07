@@ -1,0 +1,24 @@
+<div class="MessagePanel"
+  :class="computedClassName">
+  <NowMessage 
+    v-if="size !== 'small'"
+    ref="NowMessage"
+    :db="db"
+    :size="size">
+  </NowMessage>
+  <ClockWidget 
+    ref="ClockWidget"
+    :db="db"
+    :size="size">
+  </ClockWidget>
+  <NextMessage 
+    ref="NextMessage"
+    :db="db"
+    :size="size">
+  </NextMessage>
+  <NoteMessage 
+    ref="NoteMessage"
+    :db="db"
+    :size="size">
+  </NoteMessage>
+</div>

@@ -1,7 +1,7 @@
 import dayjs from 'dayjs'
 
 let app = {
-  props: ['db'],
+  props: ['db', 'size'],
   components: {
     // DataTaskManager: () => import(/* webpackChunkName: "components/DataTaskManager" */ './DataTaskManager/DataTaskManager.vue')
   },
@@ -26,15 +26,31 @@ let app = {
       return this.HH + ':' + this.mm + ':' + this.ss
     },
     computedStyle () {
+      let borderWidth = '0.1rem'
+
+      if (this.size === 'small') {
+        borderWidth = '0.05rem'
+      }
+
       let output = {
         color: this.db.localConfig.clockColor,
-        '-webkit-text-stroke': '0.1rem ' + this.db.localConfig.backgroundColor,
-        'text-stroke': '0.1rem ' + this.db.localConfig.backgroundColor,
+        '-webkit-text-stroke': borderWidth + ' ' + this.db.localConfig.backgroundColor,
+        'text-stroke': borderWidth + ' ' + this.db.localConfig.backgroundColor,
       }
       if (!this.HH) {
         output['visibility'] = 'hidden'
       }
+
       return output
+    },
+    computedClassName () {
+      let classList = []
+
+      if (this.size === 'small') {
+        classList.push('small')
+      }
+
+      return classList
     }
   },
   mounted() {
