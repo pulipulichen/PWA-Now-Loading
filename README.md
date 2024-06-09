@@ -31,3 +31,4 @@ Chen, Y.-T. (2024). *PWA-Now-Loading* (20240607.023235) [Computer software]. Zen
 - nine-sols-yiti.png https://twitter.com/Yanfiregreen/status/1798594586824368597
 - ai-jamming.gif https://www.reddit.com/r/OshiNoKo/comments/12l225p/ai_jamming_transparent_version_in_the_comments/
 - walking-mushroom-dunmeshi.gif https://tenor.com/view/walking-mushroom-dunmeshi-dungeon-meshi-delicious-in-dungeon-gif-3466738881157473385
+- shikanoko.gif https://tenor.com/view/dancing-girl-gif-2905325976641914654

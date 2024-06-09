@@ -1,5 +1,6 @@
 <form class="ConfigurationPanel ui form">
 
+  <!--
   <div class="field">
     <div class="ui fluid large buttons">
       <div v-for="config in ThemeList"
@@ -12,6 +13,7 @@
       </div>
     </div>
   </div>
+  -->
 
   <div class="ui container">
       
@@ -38,10 +40,12 @@
             onfocus="this.select()" />
           <div class="ui buttons">
             <button class="ui icon button"
+            :class="{'disabled': (db.localConfig.iframeURL === '')}"
               @click="db.localConfig.iframeURL = ''">
               <i class="close icon"></i>
             </button>
             <button class="ui icon button"
+              :class="{'disabled': (!isURLEnable) }"
               @click="popup(db.localConfig.iframeURL)">
               <i class="linkify icon"></i>
             </button>
@@ -52,6 +56,18 @@
       </div>
     </div>
       
+    <div class="field">
+      <div class="cover-theme-container">
+        <div v-for="config in CoverList"
+          class="cover-icon"
+          :class="{selected: (config.coverImage === db.localConfig.coverImage)}"
+          :title="getFilename(config.coverImage)"
+          :style="{'background': 'url(' + config.coverImage + ')'}"
+          @click="setTheme(config)">
+        </div>
+      </div>
+    </div>
+
     <div class="fields">
       <div class="eight wide field">
         <label for="localConfigCoverImage">
@@ -61,15 +77,7 @@
           type="url" 
           id="localConfigCoverImage"
           v-model="db.localConfig.coverImage" />
-        <div class="cover-theme-container">
-          <div v-for="config in CoverList"
-            class="cover-icon"
-            :class="{selected: (config.coverImage === db.localConfig.coverImage)}"
-            :title="getFilename(config.coverImage)"
-            :style="{'background': 'url(' + config.coverImage + ')'}"
-            @click="setTheme(config)">
-          </div>
-        </div>
+        
       </div>
     
       <div class="eight wide field">
@@ -145,14 +153,45 @@
         <label for="localConfigDemo">
           {{ $t('Setup Demo') }}
         </label>
-        <button type="button"
-          class="ui fluid button"
-          @click="setupDemo">
-          {{ $t('Setup Demo') }}
-        </button>
+        <div class="ui fluid basic buttons">
+          <button type="button"
+            class="ui button"
+            @click="setupDemo">
+            {{ $t('Setup URL') }}
+          </button>
+          <button type="button"
+            class="ui button"
+            @click="setupDemo(false)">
+            {{ $t('Setup Simple') }}
+          </button>
+        </div>
+          
       </div>
     </div>
 
+    <div class="field">
+      <label>
+        {{ $t('BGM Player')}}
+      </label>
+      <div class="ui fluid basic buttons">
+        <a href="https://www.youtube.com/watch?v=zyDcEdTMjE8" target="bgm"
+          @click="popup"
+          class="ui button">
+          {{ $t('木吉他') }}
+        </a>
+        <a href="https://www.youtube.com/watch?v=D6DVTLvOupE" target="bgm"
+          @click="popup"
+          class="ui button">
+          {{ $t('強風大背頭 ') }}
+        </a>
+        <a href="https://www.youtube.com/watch?v=dCEMSaho0io" target="bgm"
+          @click="popup"
+          class="ui button">
+          {{ $t('しかのこ ') }}
+        </a>
+      </div>
+        
+    </div>
   </div>
 
 

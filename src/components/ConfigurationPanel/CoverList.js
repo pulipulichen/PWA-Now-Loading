@@ -231,7 +231,7 @@ export default [
     coverSize: 'contain'
    },
    { 
-    coverImage: './assets/cover/nine-sols/nine-sols-yiti.png',  
+    coverImage: './assets/cover/game/nine-sols-yiti.png',  
     coverStyle: 'round', 
     backgroundColor: '#F6F7E9',
     clockColor: '#41423D',
@@ -248,6 +248,16 @@ export default [
     scheduleMessageColor: '#166558',
     noteMessageColor: '#A7798F',
     rolloutColor: '#7E161D',
+    coverSize: 'cover'
+  },
+  { 
+    coverImage: './assets/cover/anime/shikanoko.gif',  
+    coverStyle: 'round', 
+    backgroundColor: '#E5EDF0',
+    clockColor: '#01437F',
+    scheduleMessageColor: '#314463',
+    noteMessageColor: '#9D6D17',
+    rolloutColor: '#24207C',
     coverSize: 'cover'
   },
 ]

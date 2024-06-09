@@ -18,7 +18,19 @@ let app = {
     },
   },
   computed: {
-    
+    isURLEnable () {
+      let url = this.db.localConfig.iframeURL
+      if (!url.startsWith('http')) {
+        return false
+      }
+      
+      try {
+        new URL(url)
+        return true
+      }
+      catch (e) {}
+      return false
+    }
   },
   mounted() {
     
@@ -44,13 +56,18 @@ let app = {
       this.db.config.showConfiguration = false
     },
     popup (url) {
-      this.db.utils.PopupUtils.open(url)
+      return this.db.utils.PopupUtils.openURLFullscreen(url)
     },
-    setupDemo () {
+    setupDemo (setURL = true) {
+      this.db.localConfig.rolloutNumber = '1234'
       this.db.localConfig.nowMessage = 'Now Message'
       this.db.localConfig.nextMessage = 'Next Message'
       this.db.localConfig.noteMessage = 'Note Message'
-      this.db.localConfig.iframeURL = 'https://gdoc.pub/doc/e/2PACX-1vSxSMgfAPH9e8UgVOjvjHjy_cr7gWyKDDNH-EtBBdH88pmuFCYSsULWIo71qIXSXcn5DOcHZVf1AmSp'
+      
+      if (setURL) {
+        this.db.localConfig.iframeURL = 'https://gdoc.pub/doc/e/2PACX-1vSxSMgfAPH9e8UgVOjvjHjy_cr7gWyKDDNH-EtBBdH88pmuFCYSsULWIo71qIXSXcn5DOcHZVf1AmSp'
+      }
+        
 
       this.db.config.showConfiguration = false
     }
