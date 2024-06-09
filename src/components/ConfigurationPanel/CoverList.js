@@ -241,6 +241,16 @@ export default [
     coverSize: 'cover'
   },
   { 
+    coverImage: './assets/cover/game/nine-sols-yiti-parry.gif',  
+    coverStyle: 'round', 
+    backgroundColor: '#F3F3F1',
+    clockColor: '#423319',
+    scheduleMessageColor: '#3A6457',
+    noteMessageColor: '#153835',
+    rolloutColor: '#153835',
+    coverSize: 'cover'
+  },
+  { 
     coverImage: './assets/cover/sisi/box-toy.jpg',  
     coverStyle: 'round', 
     backgroundColor: '#EFE7DC',
