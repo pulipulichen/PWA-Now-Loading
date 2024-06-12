@@ -200,16 +200,16 @@ export default [
   //   rolloutColor: '#87986a',
   //   coverSize: 'cover'
   //  },
-  //  { 
-  //   coverImage: './assets/cover/anime/frieren-stupid.gif', 
-  //   coverStyle: 'round', 
-  //   backgroundColor: '#D8CEC0',
-  //   clockColor: '#748938',
-  //   scheduleMessageColor: '#636776',
-  //   noteMessageColor: '#636776',
-  //   rolloutColor: '#654945',
-  //   coverSize: 'cover'
-  //  },
+   { 
+    coverImage: './assets/cover/anime/frieren-panic.gif', 
+    coverStyle: 'round', 
+    backgroundColor: '#D8CEC0',
+    clockColor: '#748938',
+    scheduleMessageColor: '#636776',
+    noteMessageColor: '#636776',
+    rolloutColor: '#654945',
+    coverSize: 'cover'
+   },
    { 
     coverImage: './assets/cover/season/padoru_santa.png', 
     coverStyle: 'square', 
@@ -229,6 +229,36 @@ export default [
     noteMessageColor: '#46277D',
     rolloutColor: '#D2523B',
     coverSize: 'contain'
+   },
+   { 
+    coverImage: './assets/cover/anime/marcille-cry.gif', 
+    coverStyle: 'round', 
+    backgroundColor: '#F8F4F9',
+    clockColor: '#D2523B',
+    scheduleMessageColor: '#46277D',
+    noteMessageColor: '#46277D',
+    rolloutColor: '#D2523B',
+    coverSize: 'contain'
+   },
+   { 
+    coverImage: './assets/cover/anime/marcille-panic1.gif', 
+    coverStyle: 'round', 
+    backgroundColor: '#F8F4F9',
+    clockColor: '#D2523B',
+    scheduleMessageColor: '#46277D',
+    noteMessageColor: '#46277D',
+    rolloutColor: '#D2523B',
+    coverSize: 'cover'
+   },
+   { 
+    coverImage: './assets/cover/anime/marcille-panic2.gif', 
+    coverStyle: 'round', 
+    backgroundColor: '#F8F4F9',
+    clockColor: '#D2523B',
+    scheduleMessageColor: '#46277D',
+    noteMessageColor: '#46277D',
+    rolloutColor: '#D2523B',
+    coverSize: 'cover'
    },
    { 
     coverImage: './assets/cover/game/nine-sols-yiti.png',  

@@ -32,3 +32,7 @@ Chen, Y.-T. (2024). *PWA-Now-Loading* (20240607.023235) [Computer software]. Zen
 - ai-jamming.gif https://www.reddit.com/r/OshiNoKo/comments/12l225p/ai_jamming_transparent_version_in_the_comments/
 - walking-mushroom-dunmeshi.gif https://tenor.com/view/walking-mushroom-dunmeshi-dungeon-meshi-delicious-in-dungeon-gif-3466738881157473385
 - shikanoko.gif https://tenor.com/view/dancing-girl-gif-2905325976641914654
+- frieren-panic.gif https://tenor.com/view/anime-elf-question-girl-cute-gif-3302244728779505680
+- marcille-panic1.gif https://tenor.com/view/dungeon-meshi-delicious-in-dungeon-studio-trigger-anime-marcille-donato-gif-7055512212075830969
+- marcille-panic2.gif https://tenor.com/view/dungeon-meshi-delicious-in-dungeon-anime-studio-trigger-marcille-donato-gif-1548526370779084586
+- marcille-cry.gif https://tenor.com/view/dungeon-meshi-delicious-in-dungeon-3000bears-marcille-marcille-donato-gif-10877746947090930610
