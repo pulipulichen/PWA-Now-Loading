@@ -238,7 +238,7 @@ export default [
     scheduleMessageColor: '#46277D',
     noteMessageColor: '#46277D',
     rolloutColor: '#D2523B',
-    coverSize: 'contain'
+    coverSize: 'cover'
    },
    { 
     coverImage: './assets/cover/anime/marcille-panic1.gif', 
