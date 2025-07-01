@@ -26,29 +26,39 @@ let app = {
   },
   methods: {
     initCountdown () {
+      this.calcCountdown()
       setInterval(() => {
-        let date = new Date()
-        let hour = date.getHours()
-        let minute = date.getMinutes()
-
-        let isMorning = (hour < 12)
-
-        let isNextHour = false
-        if (isMorning) {
-          isNextHour = ((hour % 2) === 0)
-        }
-        else {
-          isNextHour = ((hour % 2) === 1)
-        }
-
-        let countdown = 0
-        if (isNextHour) {
-          countdown = countdown + 60
-        }
-        countdown = countdown + (60 - minute) + 1
-
-        this.countdown = countdown
+        this.calcCountdown()
       }, 1000)
+    },
+    getNextBreakTime () {
+      let breakTimes = this.db.localConfig.breakTime.split(',')
+      let date = new Date()
+      let hour = date.getHours()
+
+      for (let i = 0; i < breakTimes.length; i++) {
+        let breakTime = Number(breakTimes[i])
+        if (breakTime > hour) {
+          return breakTime
+        }
+      }
+      return false
+    },
+    calcCountdown () {
+      let nextBreakTime = this.getNextBreakTime()
+      if (nextBreakTime === false) {
+        this.countdown = false
+        return false
+      }
+
+      let date = new Date()
+      let hour = date.getHours()
+      let minute = date.getMinutes()
+
+      let remainingHours = nextBreakTime - hour - 1
+      let remainingMinutes = 60 - minute + 1
+      
+      this.countdown = (remainingHours * 60) + remainingMinutes
     }
   }
 }

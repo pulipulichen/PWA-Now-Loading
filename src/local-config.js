@@ -13,6 +13,8 @@ let localConfig = {
   rolloutColor: 'brown',
   lastChanged: null,
   iframeURL: ``,
+  displayCountdownTimer: false,
+  breakTime: "9,10,11,12,14,15,16,17,18",
 }
 
 // ----------------------------------------------------------------

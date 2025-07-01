@@ -1,4 +1,5 @@
 <div class="CountdownTimer"
-  :style="computedStyle">
+  :style="computedStyle"
+  v-if="db.localConfig.displayCountdownTimer && (countdown !== false)">
   {{ $t('距離下課還有') }}{{ countdown }}{{ $t('分鐘') }}
 </div>

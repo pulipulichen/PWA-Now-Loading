@@ -139,6 +139,30 @@
 
     <div class="fields">
 
+      <div class="four wide field">
+        <label for="localConfigDisplayCountdownTimer">
+          {{ $t('Display Countdown Timer') }}
+        </label>
+        <select 
+          id="localConfigDisplayCountdownTimer"
+          v-model="db.localConfig.displayCountdownTimer">
+          <option value="true">{{ $t('Display') }}</option>
+          <option value="false">{{ $t('Hide') }}</option>
+        </select>
+      </div>
+
+      <div class="twelve wide field">
+        <label for="localConfigBreakTime">
+          {{ $t('Break Time') }}
+        </label>
+        <input 
+          type="text" 
+          id="localConfigBreakTime"
+          v-model="db.localConfig.breakTime" />
+      </div>
+    </div>
+    <div class="fields">
+
       <div class="eight wide field">
         <label for="localConfigRolloutColor">
           {{ $t('Rollout Color') }}
